@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MUSICAPP</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    hello world
-    <script>
-        console.log(789852516515);
-        var a = 100;
-    </script>
+    <div class="wrapper">
+        <audio src="../source/1.mp3" loop></audio>
+        <div class="img_wrapper">
+            <img src="../imgs/song_1.jpg" alt="">
+        </div>
+        <div class="song_info">
+            <div class="song_name">我有一个小吃货</div>
+            <div class="singer_name">洋芋</div>
+            <div class="alub_name">让咪喳做一个幸福的的小吃货</div>
+        </div>
+        <div class="song_state">
+            <div class="cur_time">00:00</div>
+            <div class="cur_state">
+                <div class="bottom">
+                    <div class="top">
+                        <div class="move_btn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="total_time">04:00</div>
+        </div>
+        <div class="btn_wrapper">
+            <div class="option_btn like_btn"></div>
+            <div class="option_btn prev_btn"></div>
+            <div class="option_btn play_btn"></div>
+            <div class="option_btn next_btn"></div>
+            <div class="option_btn list_btn"></div>
+        </div>
+    </div>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/tools.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

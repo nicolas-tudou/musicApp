@@ -1,7 +1,124 @@
-body {
-  background: green;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
 }
-body .wrapper {
-  background: #eee;
-  transform: rotate(90deg);
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.wrapper .img_wrapper {
+  width: 50%;
+  height: 0;
+  margin: 0 auto;
+  padding-top: 50%;
+  position: relative;
+}
+.wrapper .img_wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .song_info {
+  width: 100%;
+  height: 126px;
+  text-align: center;
+  margin-top: 40px;
+}
+.wrapper .song_info .song_name {
+  width: 100%;
+  line-height: 36px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 24px;
+}
+.wrapper .song_info .singer_name,
+.wrapper .song_info .alub_name {
+  width: 100%;
+  line-height: 16px;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.wrapper .song_state {
+  display: flex;
+}
+.wrapper .song_state .cur_time,
+.wrapper .song_state .total_time {
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+.wrapper .song_state .cur_state {
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.wrapper .song_state .cur_state .bottom,
+.wrapper .song_state .cur_state .top {
+  position: absolute;
+  top: 19px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.wrapper .song_state .cur_state .bottom .top,
+.wrapper .song_state .cur_state .top .top {
+  top: 0;
+  left: -100%;
+  background-color: #fff;
+}
+.wrapper .song_state .cur_state .bottom .top .move_btn,
+.wrapper .song_state .cur_state .top .top .move_btn {
+  position: absolute;
+  top: -2px;
+  left: 100%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.wrapper .btn_wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+.wrapper .btn_wrapper .option_btn {
+  flex: 1;
+  height: 60px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+.wrapper .btn_wrapper .like_btn {
+  background-image: url(../imgs/icon-like.png);
+}
+.wrapper .btn_wrapper .like_btn.islike {
+  background-image: url(../imgs/icon-like-solid.png);
+}
+.wrapper .btn_wrapper .prev_btn {
+  background-image: url(../imgs/icon-prev.png);
+}
+.wrapper .btn_wrapper .play_btn {
+  background-image: url(../imgs/icon-play.png);
+}
+.wrapper .btn_wrapper .play_btn.ispause {
+  background-image: url(../imgs/icon-pause.png);
+}
+.wrapper .btn_wrapper .next_btn {
+  background-image: url(../imgs/icon-next.png);
+}
+.wrapper .btn_wrapper .list_btn {
+  background-image: url(../imgs/icon-list.png);
 }
