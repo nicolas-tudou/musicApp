@@ -1,0 +1,34 @@
+[
+    {
+        "id": "26899717",
+        "image": "https://img3.doubanio.com/view/subject/s/public/s29114672.jpg",
+        "song": "成都",
+        "singer": "赵雷",
+        "album": "",
+        "islike": true
+    },
+    {
+        "id": "2082854",
+        "image": "https://img1.doubanio.com/view/subject/s/public/s2410157.jpg",
+        "song": "成都",
+        "singer": "李宇春",
+        "album": "成都生日演唱会",
+        "islike": false
+    },
+    {
+        "id": "26899717",
+        "image": "https://img3.doubanio.com/view/subject/s/public/s29114672.jpg",
+        "song": "成都",
+        "singer": "宋秉洋",
+        "album": "",
+        "islike": false
+    },
+    {
+        "id": "26954151",
+        "image": "https://img3.doubanio.com/view/subject/s/public/s29279383.jpg",
+        "song": "成都",
+        "singer": "赵雷",
+        "album": "成都成都",
+        "islike": true
+    }
+]
